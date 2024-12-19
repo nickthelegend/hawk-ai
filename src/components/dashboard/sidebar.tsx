@@ -1,13 +1,17 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, FolderOpen, Users, Settings, HelpCircle, LogOut } from 'lucide-react'
+import { cn } from "@/lib/utils"
+import { Home, BarChart2, FileText, Settings, HelpCircle, LogOut } from 'lucide-react'
+import { signOut } from "next-auth/react"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const sidebarItems = [
-  { icon: Home, label: "Home", href: "/dashboard" },
-  { icon: FolderOpen, label: "Projects", href: "/dashboard/projects" },
-  { icon: Users, label: "Team", href: "/dashboard/team" },
+  { icon: Home, label: "Overview", href: "/dashboard" },
+  { icon: BarChart2, label: "Analytics", href: "/dashboard/analytics" },
+  { icon: FileText, label: "Reports", href: "/dashboard/reports" },
   { icon: Settings, label: "Settings", href: "/dashboard/settings" },
   { icon: HelpCircle, label: "Help", href: "/dashboard/help" },
 ]
@@ -16,42 +20,55 @@ export function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <div className="flex h-full w-[240px] flex-col border-r border-gray-800 bg-black">
-      <div className="flex h-14 items-center border-b border-gray-800 px-4">
-        <Link href="/dashboard" className="font-bold text-white">
-          HawkAI
-        </Link>
-      </div>
-      
-      <div className="flex-1 overflow-y-auto py-4">
-        <nav className="space-y-1 px-2">
-          {sidebarItems.map((item) => {
-            const Icon = item.icon
-            const isActive = pathname === item.href
-            
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`flex items-center gap-x-3 rounded-md px-3 py-2 text-sm font-medium ${
-                  isActive
-                    ? "bg-gray-800 text-white"
-                    : "text-gray-400 hover:bg-gray-800 hover:text-white"
-                }`}
-              >
-                <Icon className="h-5 w-5" />
-                {item.label}
-              </Link>
-            )
-          })}
-        </nav>
+    <div className="fixed left-0 top-0 z-40 flex h-screen w-16 flex-col bg-zinc-950 shadow-xl">
+      {/* Logo Section */}
+      <div className="flex h-16 items-center justify-center border-b border-zinc-800/50">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600">
+          <span className="text-lg font-bold text-white">H</span>
+        </div>
       </div>
 
-      <div className="border-t border-gray-800 p-4">
-        <button className="flex w-full items-center gap-x-3 rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">
+      {/* Navigation Items */}
+      <nav className="flex flex-1 flex-col items-center gap-2 p-2">
+        {sidebarItems.map((item) => {
+          const Icon = item.icon
+          const isActive = pathname === item.href
+
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "group relative flex h-10 w-10 items-center justify-center rounded-lg transition-colors",
+                isActive
+                  ? "bg-indigo-600 text-white"
+                  : "text-zinc-400 hover:bg-zinc-800 hover:text-white"
+              )}
+            >
+              <Icon className="h-5 w-5" />
+              <div className="absolute left-14 hidden rounded-md bg-zinc-900 px-2 py-1 text-sm text-white group-hover:block">
+                {item.label}
+              </div>
+            </Link>
+          )
+        })}
+      </nav>
+
+      {/* User Profile Section */}
+      <div className="flex flex-col items-center gap-2 border-t border-zinc-800/50 p-2">
+        <button
+          onClick={() => signOut()}
+          className="group relative flex h-10 w-10 items-center justify-center rounded-lg text-zinc-400 hover:bg-zinc-800 hover:text-white"
+        >
           <LogOut className="h-5 w-5" />
-          Sign out
+          <div className="absolute left-14 hidden rounded-md bg-zinc-900 px-2 py-1 text-sm text-white group-hover:block">
+            Sign out
+          </div>
         </button>
+        <Avatar className="h-10 w-10">
+          <AvatarImage src="/avatars/01.png" alt="User" />
+          <AvatarFallback>U</AvatarFallback>
+        </Avatar>
       </div>
     </div>
   )
