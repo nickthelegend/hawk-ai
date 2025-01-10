@@ -35,7 +35,7 @@ export default function LandingPage() {
               <div className="flex items-center justify-center">
                 <div className="relative w-full max-w-[600px] aspect-video">
                   <Image
-                    src="/placeholder.svg"
+                    src="https://kzmkxyrvsmr7twti037d.lite.vusercontent.net/placeholder.svg"
                     alt="Dashboard Preview"
                     layout="fill"
                     objectFit="cover"
