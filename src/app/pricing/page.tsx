@@ -15,7 +15,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Toggle } from "@/components/ui/toggle"
 import { useState } from "react"
 
 export default function PricingPage() {
@@ -26,7 +25,7 @@ export default function PricingPage() {
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 left-1/2 h-[1000px] w-[1000px] -translate-x-1/2 transform">
-          <div className="absolute inset-0 bg-gradient-to-b from-violet-500/20 to-transparent blur-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#131313]/20 to-transparent blur-3xl" />
         </div>
         {/* Stars */}
         <div className="absolute inset-0" style={{ 
@@ -40,7 +39,7 @@ export default function PricingPage() {
           <div className="container relative px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-sm font-medium text--400">Pricing</h2>
+                <h2 className="text-sm font-medium text-gray-400">Pricing</h2>
                 <h1 className="bg-gradient-to-b from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tighter text-transparent sm:text-5xl xl:text-6xl/none">
                   Security. Privacy. Freedom.
                 </h1>
@@ -56,7 +55,7 @@ export default function PricingPage() {
                 <button
                   onClick={() => setIsAnnual(false)}
                   className={`rounded-full px-4 py-2 text-sm transition-all ${
-                    !isAnnual ? 'bg-purple-600 text-white' : 'text-gray-400'
+                    !isAnnual ? 'bg-[#ececec] text-black' : 'bg-[#131313] text-white'
                   }`}
                 >
                   Monthly
@@ -64,7 +63,7 @@ export default function PricingPage() {
                 <button
                   onClick={() => setIsAnnual(true)}
                   className={`rounded-full px-4 py-2 text-sm transition-all ${
-                    isAnnual ? 'bg-purple-600 text-white' : 'text-gray-400'
+                    isAnnual ? 'bg-[#ececec] text-black' : 'bg-[#131313] text-white'
                   }`}
                 >
                   Annually
@@ -73,14 +72,14 @@ export default function PricingPage() {
             </div>
 
             <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-3">
-              <Card className="relative overflow-hidden border-gray-800 bg-black/40 backdrop-blur-xl">
+              <Card className="relative overflow-hidden border-gray-800 bg-gradient-to-b from-[#131313] to-black">
                 <CardContent className="p-6">
                   <div className="flex flex-col gap-4">
                     <h3 className="text-lg font-bold text-white">Personal</h3>
                     <p className="text-sm text-gray-400">For individuals and small teams.</p>
                     <div className="text-4xl font-bold text-white">Free</div>
                     <p className="text-sm text-gray-400">forever</p>
-                    <Button className="mt-4 w-full bg-white text-black hover:bg-gray-200">
+                    <Button className="mt-4 w-full h-12 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] text-white border-0 hover:opacity-90">
                       Get Started
                     </Button>
                     <ul className="grid gap-2 text-sm text-gray-400">
@@ -101,9 +100,9 @@ export default function PricingPage() {
                 </CardContent>
               </Card>
 
-              <Card className="relative overflow-hidden border-purple-500/20 bg-black/40 backdrop-blur-xl">
-                <div className="absolute right-2 top-2 rounded-full bg-purple-600 px-2 py-1 text-xs font-bold text-white">
-                  Best Deal
+              <Card className="relative overflow-hidden border-[#ececec]/20 bg-gradient-to-b from-[#131313] to-black">
+                <div className="absolute right-4 top-4 text-xs text-gray-400">
+                  Popular
                 </div>
                 <CardContent className="p-6">
                   <div className="flex flex-col gap-4">
@@ -113,8 +112,8 @@ export default function PricingPage() {
                       <span className="text-4xl font-bold text-white">$2.99</span>
                       <span className="text-sm text-gray-400">/month</span>
                     </div>
-                    <p className="text-sm">+3 EXTRA months</p>
-                    <Button className="mt-4 w-full bg-purple-600 text-white hover:bg-purple-700">
+                    <p className="text-sm text-gray-400">+3 EXTRA months</p>
+                    <Button className="mt-4 w-full h-12 bg-gradient-to-b from-white to-gray-200 text-black border-0 hover:opacity-90">
                       Get Started
                     </Button>
                     <ul className="grid gap-2 text-sm text-gray-400">
@@ -135,7 +134,7 @@ export default function PricingPage() {
                 </CardContent>
               </Card>
 
-              <Card className="relative overflow-hidden border-gray-800 bg-black/40 backdrop-blur-xl">
+              <Card className="relative overflow-hidden border-gray-800 bg-gradient-to-b from-[#131313] to-black">
                 <CardContent className="p-6">
                   <div className="flex flex-col gap-4">
                     <h3 className="text-lg font-bold text-white">Premium</h3>
@@ -144,8 +143,8 @@ export default function PricingPage() {
                       <span className="text-4xl font-bold text-white">$6.99</span>
                       <span className="text-sm text-gray-400">/month</span>
                     </div>
-                    <p className="text-sm text-white">+3 EXTRA months</p>
-                    <Button className="mt-4 w-full bg-white text-black hover:bg-gray-200">
+                    <p className="text-sm text-gray-400">+3 EXTRA months</p>
+                    <Button className="mt-4 w-full h-12 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] text-white border-0 hover:opacity-90">
                       Get Started
                     </Button>
                     <ul className="grid gap-2 text-sm text-gray-400">
@@ -209,7 +208,7 @@ export default function PricingPage() {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1" className="border-gray-800">
-                  <AccordionTrigger className="text-white hover:text-purple-400">
+                  <AccordionTrigger className="text-white hover:text-[#ececec]">
                     What payment methods do you accept?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400">
@@ -218,7 +217,7 @@ export default function PricingPage() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2" className="border-gray-800">
-                  <AccordionTrigger className="text-white hover:text-purple-400">
+                  <AccordionTrigger className="text-white hover:text-[#ececec]">
                     Can I change my plan later?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400">
@@ -227,7 +226,7 @@ export default function PricingPage() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3" className="border-gray-800">
-                  <AccordionTrigger className="text-white hover:text-purple-400">
+                  <AccordionTrigger className="text-white hover:text-[#ececec]">
                     Is there a free trial available?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400">

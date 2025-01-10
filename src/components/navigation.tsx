@@ -7,11 +7,11 @@ import { Menu } from 'lucide-react'
 
 export function Navigation() {
   const navigationItems = [
-    { name: "Company", href: "/company" },
+    { name: "Download", href: "/download" },
     { name: "Docs", href: "/docs" },
     { name: "Pricing", href: "/pricing" },
     { name: "Security", href: "/security" },
-    { name: "Contacts", href: "/contacts" },
+    { name: "Contacts", href: "/contact" },
   ]
 
   return (
