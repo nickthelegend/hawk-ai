@@ -75,7 +75,8 @@ export function Navigation() {
             href="/" 
             className="flex items-center space-x-2 group"
           >
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-pink-400 transition-all">
+            {/* <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-pink-400 transition-all"> */}
+            <span className="text-xl font-bold text-white transition-all">
               HawkAI
             </span>
           </Link>
@@ -107,7 +108,8 @@ export function Navigation() {
             </Link>
           </Button>
           <Button 
-            className="hidden sm:inline-flex bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white border-0"
+            
+            className="hidden sm:inline-flex bg-white text-black hover:bg-gray-200 border-0"
             asChild
           >
             <Link href="/signup">
@@ -119,4 +121,3 @@ export function Navigation() {
     </header>
   )
 }
-
