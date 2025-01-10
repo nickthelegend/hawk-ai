@@ -43,7 +43,7 @@ export default function DownloadPage() {
 
         <div className="relative z-10 flex flex-col items-center text-center">
           <h1 className="mb-6 text-4xl font-bold leading-tight md:text-6xl lg:text-7xl max-w-5xl">
-            <span className="inline-block animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent">
+            <span className="inline-block animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent py-1">
               Scaling your team
             </span>
             <br />
@@ -56,7 +56,7 @@ export default function DownloadPage() {
           
           <Button 
             size="lg" 
-            className="animate-shimmer bg-[linear-gradient(110deg,#000103,45%,#1e40af,55%,#000103)] bg-[length:200%_100%] transition-colors hover:bg-[length:100%_100%] text-lg px-8 py-6 rounded-xl"
+            className="animate-shimmer bg-[linear-gradient(110deg,#000103,45%,#1e40af,55%,#000103)] bg-[length:200%_100%] transition-colors hover:bg-[length:100%_100%] text-lg px-8 py-6 rounded-xl text-white"
           >
             Download now - it's FREE
           </Button>
