@@ -38,7 +38,7 @@ export default function LoginPage() {
               <div className="mt-8 space-y-4">
                 <Button 
                   variant="outline" 
-                  className="w-full justify-start"
+                  className="w-full justify-start text-black"
                   onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
                 >
                   <FcGoogle className="mr-2 h-5 w-5" />
@@ -47,7 +47,7 @@ export default function LoginPage() {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full justify-start"
+                  className="w-full justify-start text-black"
                   onClick={() => signIn('twitter', { callbackUrl: '/dashboard' })}
                 >
                   <FaTwitter className="mr-2 h-5 w-5 text-blue-400" />

@@ -26,7 +26,7 @@ export default function LandingPage() {
                     <Button className="bg-white text-black hover:bg-gray-200">Get Started</Button>
                   </Link>
                   <Link href="/pricing">
-                    <Button variant="outline" className="border-white text-white hover:bg-zinc-800">
+                    <Button variant="default" className="border-white text-white hover:bg-zinc-800">
                       View Pricing
                     </Button>
                   </Link>

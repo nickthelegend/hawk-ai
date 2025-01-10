@@ -59,7 +59,7 @@ export function Navigation() {
 
         <div className="flex items-center space-x-4">
           <Link href="/login">
-            <Button variant="ghost" className="text-white hover:bg-gray-800">
+            <Button variant="default">
               Login
             </Button>
           </Link>
