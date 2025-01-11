@@ -8,17 +8,38 @@ import Link from "next/link"
 import { useState } from "react"
 import { FcGoogle } from "react-icons/fc"
 import { FaTwitter } from "react-icons/fa"
+import { useRouter, useSearchParams } from 'next/navigation'
+import { login, setSession } from '@/lib/auth'
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter()
+  const [error, setError] = useState<string | null>(null)
+  const searchParams = useSearchParams()
+  const redirectTo = searchParams.get('redirectedFrom') || '/dashboard'
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
-    // Add your login logic here
-    setIsLoading(false)
+    setError(null)
+
+    try {
+      const { session, user } = await login(email, password)
+      if (session) {
+        console.log(user)
+        await setSession(session.access_token, session.refresh_token)
+        router.push(redirectTo)
+      } else {
+        setError('Login failed. Please try again.')
+      }
+    } catch (err) {
+      console.error('Login error:', err)
+      setError('An error occurred during login. Please try again.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (

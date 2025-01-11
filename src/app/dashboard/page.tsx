@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts'
+import { getSession } from "@/lib/auth"
 
 const entryPointData = [
   { name: 'Mon', value1: 150, value2: 20 },
@@ -16,6 +17,9 @@ const entryPointData = [
 ]
 
 export default function DashboardPage() {
+  const session =  getSession()
+  console.log(session)
+
   return (
     <div className="p-6 bg-black text-white">
       <div className="flex justify-between items-center mb-8">
