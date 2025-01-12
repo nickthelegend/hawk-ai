@@ -30,8 +30,8 @@ export default function SignUpPage() {
         <div className="absolute -bottom-8 left-20 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000"></div>
         <div className="absolute bottom-40 right-40 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-6000"></div>
       </div>
-      <div className="container mx-auto flex min-h-screen max-w-[1200px]">
-        <div className="flex w-full flex-col lg:flex-row">
+      <div className="container mx-auto flex min-h-screen max-w-[1200px] relative" style={{ zIndex: 1 }}>
+      <div className="flex w-full flex-col lg:flex-row">
           {/* Left Section */}
           <div className="flex w-full flex-col p-8 lg:w-[480px]">
             <Link href="/" className="flex items-center text-sm text-gray-400 hover:text-white">

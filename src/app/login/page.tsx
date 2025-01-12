@@ -1,15 +1,17 @@
+
 "use client"
-import { Suspense } from "react"
+  
 import { Button } from "@/components/ui/button"
-  import { Input } from "@/components/ui/input"
-  import { ArrowLeft } from 'lucide-react'
-  import { signIn } from "next-auth/react"
-  import Link from "next/link"
-  import { useState } from "react"
-  import { FcGoogle } from "react-icons/fc"
-  import { FaTwitter } from "react-icons/fa"
-  import { useRouter, useSearchParams } from 'next/navigation'
-  import { login, setSession } from '@/lib/auth'
+import { Input } from "@/components/ui/input"
+import { ArrowLeft } from 'lucide-react'
+import { signIn } from "next-auth/react"
+import Link from "next/link"
+import { useState } from "react"
+import { FcGoogle } from "react-icons/fc"
+import { FaTwitter } from "react-icons/fa"
+import { useRouter, useSearchParams } from 'next/navigation'
+import { login, setSession } from '@/lib/auth'
+import { Suspense } from "react"
 
 export default function LoginPage() {
   return (
@@ -49,9 +51,8 @@ function LoginSkeleton() {
 }
 
 function LoginContent() {
-  "use client"
-  
-  
+ 
+
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
@@ -85,14 +86,14 @@ function LoginContent() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Animated background */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0" style={{ zIndex: 0 }}>
         <div className="absolute top-0 -left-4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
         <div className="absolute top-60 right-20 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-8 left-20 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000"></div>
         <div className="absolute bottom-40 right-40 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-6000"></div>
       </div>
-      <div className="container mx-auto flex min-h-screen max-w-[1200px]">
-        <div className="flex w-full flex-col lg:flex-row">
+      <div className="container mx-auto flex min-h-screen max-w-[1200px] relative" style={{ zIndex: 1 }}>
+      <div className="flex w-full flex-col lg:flex-row">
           {/* Left Section */}
           <div className="flex w-full flex-col p-8 lg:w-[480px]">
             <Link href="/" className="flex items-center text-sm text-gray-400 hover:text-white">
@@ -170,6 +171,8 @@ function LoginContent() {
                     {isLoading ? "Signing in..." : "Sign in"}
                   </Button>
                 </form>
+
+                {error && <p className="text-red-500 text-center">{error}</p>}
 
                 <p className="text-center text-sm text-gray-400">
                   Don't have an account?{" "}

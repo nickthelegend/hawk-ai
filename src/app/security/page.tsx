@@ -41,7 +41,7 @@ export default function SecurityPage() {
         <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-<main className="container mx-auto px-4 pt-32">
+<main className="container mx-auto px-4 pt-32 " >
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,10 +64,10 @@ export default function SecurityPage() {
               placeholder="Enter your email" 
               value={email}
               onChange={handleEmailChange}
-              className="bg-white/10 border-white/20 text-white placeholder-gray-400"
+              className="bg-white/10 border-white/20 text-white placeholder-gray-400 z-0"
             />
             <Button 
-              className="animate-shimmer bg-[linear-gradient(110deg,#00f260,45%,#0575e6,55%,#00f260)] bg-[length:200%_100%] transition-colors hover:bg-[length:100%_100%] text-white border-0"
+              className="animate-shimmer bg-[linear-gradient(110deg,#00f260,45%,#0575e6,55%,#00f260)] bg-[length:200%_100%] transition-colors hover:bg-[length:100%_100%] text-white border-0 z-0"
               disabled={!isEmailValid}
             >
               Try it Free
