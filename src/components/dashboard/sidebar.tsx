@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { usePathname,useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Home, BarChart2, FileText, Settings, HelpCircle, LogOut } from 'lucide-react'
+import { Home, BarChart2, FileText, Settings, HelpCircle, LogOut, Monitor, Key } from 'lucide-react'
 import { signOut } from "next-auth/react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { logout, supabase } from "@/lib/auth"
@@ -13,6 +13,8 @@ const sidebarItems = [
   { icon: Home, label: "Overview", href: "/dashboard" },
   { icon: BarChart2, label: "Analytics", href: "/dashboard/analytics" },
   { icon: FileText, label: "Reports", href: "/dashboard/reports" },
+  { icon: Monitor, label: "Computers", href: "/dashboard/computers" },
+  { icon: Key, label: "Licence", href: "/dashboard/licence" },
   { icon: Settings, label: "Settings", href: "/dashboard/settings" },
   { icon: HelpCircle, label: "Help", href: "/dashboard/help" },
 ]
