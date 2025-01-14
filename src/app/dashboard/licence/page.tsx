@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useRouter } from 'next/navigation'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -16,6 +17,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { toast } from "@/hooks/use-toast"
 
 // Sample data - replace with real data from your backend
 const licenseInfo = {
@@ -47,8 +52,77 @@ const usageData = [
 
 const COLORS = ['#4f46e5', '#7c3aed', '#2563eb', '#db2777']
 
-export default function LicencePage() {
+interface License {
+  id: string
+  user_id: string
+  key: string
+  type: 'individual' | 'enterprise'
+  created_at: string
+  expires_at: string
+}
+
+export default function LicensePage() {
   const [timeRange, setTimeRange] = useState("week")
+  const [license, setLicense] = useState<License | null>(null)
+  const [licenseType, setLicenseType] = useState<"individual" | "enterprise">("individual")
+  const router = useRouter()
+
+  useEffect(() => {
+    fetchLicense()
+  }, [])
+
+  const fetchLicense = async () => {
+    try {
+      const response = await fetch('/api/license')
+      if (response.ok) {
+        const data = await response.json()
+        setLicense(data)
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to fetch license information",
+          variant: "destructive",
+        })
+      }
+    } catch (error) {
+      console.error('Error fetching license:', error)
+    }
+  }
+
+  const handleGenerateLicense = async () => {
+    try {
+      const response = await fetch('/api/license', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ type: licenseType }),
+      })
+
+      if (response.ok) {
+        const newLicense = await response.json()
+        setLicense(newLicense)
+        toast({
+          title: "License Generated",
+          description: `Your new ${licenseType} license key is: ${newLicense.key}`,
+        })
+      } else {
+        const errorData = await response.json()
+        toast({
+          title: "Error",
+          description: errorData.error || "Failed to generate license",
+          variant: "destructive",
+        })
+      }
+    } catch (error) {
+      console.error('Error generating license:', error)
+      toast({
+        title: "Error",
+        description: "An unexpected error occurred",
+        variant: "destructive",
+      })
+    }
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 p-8">
@@ -58,7 +132,7 @@ export default function LicencePage() {
           <p className="text-zinc-400">Monitor and manage your software licenses</p>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="bg-zinc-800 border-zinc-700 text-white hover:bg-zinc-700">
+          <Button variant="outline" className="bg-zinc-800 border-zinc-700 text-white hover:bg-zinc-700" onClick={fetchLicense}>
             <RefreshCw className="mr-2 h-4 w-4" />
             Refresh
           </Button>
@@ -78,16 +152,18 @@ export default function LicencePage() {
             <Shield className="h-5 w-5 text-indigo-500" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-white mb-2">{licenseInfo.plan}</div>
+            <div className="text-2xl font-bold text-white mb-2">{license?.type || "No License"}</div>
             <div className="flex justify-between items-center">
-              <span className="text-zinc-400">Licenses Used:</span>
-              <span className="text-white font-semibold">{licenseInfo.usedLicenses} / {licenseInfo.totalLicenses}</span>
+              <span className="text-zinc-400">License Key:</span>
+              <span className="text-white font-semibold">{license?.key || "N/A"}</span>
             </div>
             <Progress 
-              value={(licenseInfo.usedLicenses / licenseInfo.totalLicenses) * 100} 
+              value={license ? 100 : 0} 
               className="mt-2"
             />
-            <p className="text-xs text-zinc-400 mt-2">Expires on {licenseInfo.expiryDate}</p>
+            <p className="text-xs text-zinc-400 mt-2">
+              {license ? `Expires on ${new Date(license.expires_at).toLocaleDateString()}` : "No active license"}
+            </p>
           </CardContent>
         </Card>
 
@@ -132,6 +208,52 @@ export default function LicencePage() {
           </CardContent>
         </Card>
       </div>
+
+      <Card className="bg-zinc-800/50 border-zinc-700 mb-8">
+        <CardHeader>
+          <CardTitle className="text-zinc-100">License Key Management</CardTitle>
+          <CardDescription className="text-zinc-400">
+            Generate and manage your software license key
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid gap-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <Label htmlFor="licenseKey" className="text-zinc-300">Current License Key</Label>
+                <Input
+                  id="licenseKey"
+                  value={license?.key || "No license generated"}
+                  readOnly
+                  className="bg-zinc-700 text-white border-zinc-600"
+                />
+              </div>
+              <div>
+                <Label htmlFor="licenseType" className="text-zinc-300">License Type</Label>
+                <Select value={licenseType} onValueChange={(value: "individual" | "enterprise") => setLicenseType(value)}>
+                  <SelectTrigger className="bg-zinc-700 text-white border-zinc-600">
+                    <SelectValue placeholder="Select license type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="individual">Individual</SelectItem>
+                    <SelectItem value="enterprise">Enterprise</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+            <Button onClick={handleGenerateLicense} className="bg-indigo-600 hover:bg-indigo-700">
+              Generate New License Key
+            </Button>
+            {license && (
+              <div className="text-zinc-300">
+                <p>License Type: {license.type}</p>
+                <p>Created: {new Date(license.created_at).toLocaleDateString()}</p>
+                <p>Expires: {new Date(license.expires_at).toLocaleDateString()}</p>
+              </div>
+            )}
+          </div>
+        </CardContent>
+      </Card>
 
       <div className="grid gap-6 md:grid-cols-2 mb-8">
         <Card className="bg-zinc-800/50 border-zinc-700">
