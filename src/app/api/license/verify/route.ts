@@ -1,24 +1,25 @@
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
-import { generateLicense } from '@/lib/licenceUtils'
 
 export async function POST(request: Request) {
-  const { userId, type } = await request.json()
+  const { licenseKey } = await request.json()
   const supabase = createRouteHandlerClient({ cookies })
-
-  const licenseKey = generateLicense(userId, type)
 
   const { data, error } = await supabase
     .from('licenses')
-    .upsert({ user_id: userId, key: licenseKey, type })
-    .select()
+    .select('*')
+    .eq('key', licenseKey)
     .single()
 
   if (error) {
-    return NextResponse.json({ error: 'Failed to generate license key' }, { status: 500 })
+    return NextResponse.json({ error: 'License verification failed' }, { status: 400 })
   }
 
-  return NextResponse.json({ licenseKey: data.key })
+  if (!data) {
+    return NextResponse.json({ error: 'Invalid license key' }, { status: 404 })
+  }
+
+  return NextResponse.json({ valid: true, data })
 }
 
