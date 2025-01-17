@@ -8,10 +8,34 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
-import { CheckIcon, ShieldCheck, Clock, Mail, AlertTriangle } from 'lucide-react'
+import { ShieldCheck, Clock, Mail, AlertTriangle } from 'lucide-react'
+import { loadStripe } from '@stripe/stripe-js'
+import { createCheckoutSession } from '../actions/stripe'
+
+// Initialize Stripe
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!, {
+  apiVersion: '2024-12-18.acacia'
+})
+
+// Plan details with Stripe price IDs
+const plans = {
+    "Personal": {
+      price: 0,
+      stripePriceId: "price_1QiHcSKllUyF9mO4put6EwzN"
+    },
+    "Starter": {
+      price: 2.99,
+      stripePriceId: "price_1QiHcSKllUyF9mO44vJMImYK"
+    },
+    "Premium": {
+      price: 6.99,
+      stripePriceId: "price_1QiHcSKllUyF9mO4Pudgyak7"
+    }
+  }
 
 export default function BillingPage() {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
   const searchParams = useSearchParams()
 
   useEffect(() => {
@@ -20,6 +44,39 @@ export default function BillingPage() {
       setSelectedPlan(plan)
     }
   }, [searchParams])
+
+  // Calculate totals based on selected plan
+  const subtotal = selectedPlan ? plans[selectedPlan as keyof typeof plans]?.price || 0 : 0
+  const tax = subtotal * 0.1 // 10% tax rate
+  const total = subtotal + tax
+
+  const handleCheckout = async () => {
+    if (!selectedPlan) return
+
+    try {
+      setLoading(true)
+      const stripe = await stripePromise
+      if (!stripe) throw new Error('Stripe failed to initialize')
+
+      const planDetails = plans[selectedPlan as keyof typeof plans]
+      if (!planDetails) throw new Error('Invalid plan selected')
+
+      const { sessionId } = await createCheckoutSession(selectedPlan, planDetails.stripePriceId)
+      
+      const result = await stripe.redirectToCheckout({
+        sessionId
+      })
+
+      if (result.error) {
+        throw new Error(result.error.message)
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      // Here you might want to show an error message to the user
+    } finally {
+      setLoading(false)
+    }
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -97,16 +154,16 @@ export default function BillingPage() {
                       <div className="space-y-3">
                         <div className="flex justify-between text-gray-400">
                           <span>Subtotal</span>
-                          <span>$29.99</span>
+                          <span>${subtotal.toFixed(2)}</span>
                         </div>
                         <div className="flex justify-between text-gray-400">
-                          <span>Tax</span>
-                          <span>$2.99</span>
+                          <span>Tax (10%)</span>
+                          <span>${tax.toFixed(2)}</span>
                         </div>
                         <Separator className="bg-gray-800" />
                         <div className="flex justify-between text-white font-semibold">
                           <span>Total</span>
-                          <span>$32.98</span>
+                          <span>${total.toFixed(2)}</span>
                         </div>
                       </div>
                     </div>
@@ -118,78 +175,29 @@ export default function BillingPage() {
                   <CardContent className="p-6">
                     <h2 className="text-2xl font-bold text-white mb-6">Payment Details</h2>
                     
-                    <form className="space-y-6">
-                      <div className="space-y-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="email" className="text-white">Email Address</Label>
-                          <Input 
-                            id="email" 
-                            type="email" 
-                            placeholder="you@example.com" 
-                            className="bg-[#1a1a1a] border-gray-700 text-white" 
-                          />
-                        </div>
-
-                        <div className="space-y-2">
-                          <Label htmlFor="card" className="text-white">Card Information</Label>
-                          <Input 
-                            id="card" 
-                            placeholder="1234 5678 9012 3456" 
-                            className="bg-[#1a1a1a] border-gray-700 text-white" 
-                          />
-                          <div className="grid grid-cols-2 gap-4">
-                            <Input 
-                              placeholder="MM/YY" 
-                              className="bg-[#1a1a1a] border-gray-700 text-white" 
-                            />
-                            <Input 
-                              placeholder="CVC" 
-                              className="bg-[#1a1a1a] border-gray-700 text-white" 
-                            />
-                          </div>
-                        </div>
-
-                        <div className="space-y-2">
-                          <Label htmlFor="name" className="text-white">Cardholder Name</Label>
-                          <Input 
-                            id="name" 
-                            placeholder="Full name on card" 
-                            className="bg-[#1a1a1a] border-gray-700 text-white" 
-                          />
-                        </div>
-
-                        <div className="space-y-2">
-                          <Label htmlFor="address" className="text-white">Billing Address</Label>
-                          <Input 
-                            id="address" 
-                            placeholder="Street address" 
-                            className="bg-[#1a1a1a] border-gray-700 text-white" 
-                          />
-                          <div className="grid grid-cols-3 gap-4">
-                            <Input 
-                              placeholder="City" 
-                              className="bg-[#1a1a1a] border-gray-700 text-white" 
-                            />
-                            <Input 
-                              placeholder="State" 
-                              className="bg-[#1a1a1a] border-gray-700 text-white" 
-                            />
-                            <Input 
-                              placeholder="ZIP" 
-                              className="bg-[#1a1a1a] border-gray-700 text-white" 
-                            />
-                          </div>
-                        </div>
+                    <div className="space-y-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-white">Email Address</Label>
+                        <Input 
+                          id="email" 
+                          type="email" 
+                          placeholder="you@example.com" 
+                          className="bg-[#1a1a1a] border-gray-700 text-white" 
+                        />
                       </div>
 
-                      <Button className="w-full bg-gradient-to-b from-white to-gray-200 text-black hover:opacity-90">
-                        Complete Purchase
+                      <Button 
+                        className="w-full bg-gradient-to-b from-white to-gray-200 text-black hover:opacity-90"
+                        onClick={handleCheckout}
+                        disabled={loading}
+                      >
+                        {loading ? 'Processing...' : 'Proceed to Stripe Checkout'}
                       </Button>
 
                       <p className="text-center text-sm text-gray-400">
-                        Your payment is secured and encrypted
+                        Your payment is secured and encrypted by Stripe
                       </p>
-                    </form>
+                    </div>
                   </CardContent>
                 </Card>
               </div>
