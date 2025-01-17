@@ -8,17 +8,33 @@ import Link from "next/link"
 import { useState } from "react"
 import { FcGoogle } from "react-icons/fc"
 import { FaTwitter } from "react-icons/fa"
+import { supabase } from '@/lib/supabase'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
-
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
     // Add your sign-up logic here
-    setIsLoading(false)
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      })
+      if (data.user) {
+        router.push(`/dashboard`)
+      }
+    } catch (error) {
+      console.error('Error during sign up:', error)
+      // Handle error (e.g., show error message to user)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (

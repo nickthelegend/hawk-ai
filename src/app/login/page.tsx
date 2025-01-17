@@ -77,7 +77,7 @@ function LoginContent() {
       }
     } catch (err) {
       console.error('Login error:', err)
-      setError('An error occurred during login. Please try again.')
+      setError(`Error: ${err}`)
     } finally {
       setIsLoading(false)
     }

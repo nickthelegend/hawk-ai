@@ -26,15 +26,15 @@ export async function middleware(req: NextRequest) {
     const { data: { session } } = await supabase.auth.getSession()
 
     // Log for debugging
-    console.log('Middleware - Session:', session)
-    console.log('Middleware - URL:', req.nextUrl.pathname)
+    // console.log('Middleware - Session:', session)
+    // console.log('Middleware - URL:', req.nextUrl.pathname)
 
     // Protect the /dashboard route
     if (req.nextUrl.pathname.startsWith('/dashboard') && !session) {
       const redirectUrl = req.nextUrl.clone()
       redirectUrl.pathname = '/login'
       redirectUrl.searchParams.set('redirectedFrom', req.nextUrl.pathname)
-      console.log('Middleware - Redirecting to login')
+      // console.log('Middleware - Redirecting to login')
       return NextResponse.redirect(redirectUrl)
     }
 
@@ -42,7 +42,7 @@ export async function middleware(req: NextRequest) {
     if (session && (req.nextUrl.pathname.startsWith('/login') || req.nextUrl.pathname.startsWith('/signup'))) {
       const redirectUrl = req.nextUrl.clone()
       redirectUrl.pathname = '/dashboard'
-      console.log('Middleware - Redirecting to dashboard')
+      // console.log('Middleware - Redirecting to dashboard')
       return NextResponse.redirect(redirectUrl)
     }
   } else {
@@ -51,7 +51,7 @@ export async function middleware(req: NextRequest) {
       const redirectUrl = req.nextUrl.clone()
       redirectUrl.pathname = '/login'
       redirectUrl.searchParams.set('redirectedFrom', req.nextUrl.pathname)
-      console.log('Middleware - No token, redirecting to login')
+      // console.log('Middleware - No token, redirecting to login')
       return NextResponse.redirect(redirectUrl)
     }
   }
