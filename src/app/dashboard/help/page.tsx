@@ -5,10 +5,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Send, Bot, User, Loader2, Square, Shield, Clock, AlertTriangle, Users } from 'lucide-react';
+import { Send, Bot, User, Loader2, Square, Shield, Clock, AlertTriangle, Users, Upload } from 'lucide-react';
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { motion, AnimatePresence } from "framer-motion";
+import { Audiowide } from 'next/font/google'
+
+const audiowide = Audiowide({ 
+  weight: '400',
+  subsets: ['latin'],
+})
 
 type Message = {
   content: string;
@@ -52,13 +58,13 @@ const SECURITY_FEATURES = [
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
     { 
-      content: "Hello! I'm your Windows Security Assistant. I can help you analyze login sessions, track user activities, and monitor security warnings. Upload your Windows logs to begin analysis.",
+      content: "Hello! I'm your Windows Security Assistant. Please upload an XML file to begin the analysis.",
       sender: "ai"
     }
   ]);
   const [inputMessage, setInputMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [logFile, setLogFile] = useState<string | null>(null);
+  const [xmlContent, setXmlContent] = useState<string | null>(null);
   const [threads, setThreads] = useState<Thread[]>([
     { id: "1", title: "Login Analysis", active: true },
     { id: "2", title: "Security Warnings" },
@@ -81,21 +87,23 @@ export default function ChatPage() {
 
     const reader = new FileReader();
     reader.onload = async (event) => {
-      setLogFile(event.target?.result as string);
+      const content = event.target?.result as string;
+      setXmlContent(content);
       toast({
-        title: "Log file uploaded",
-        description: "You can now ask questions about the log data.",
+        title: "XML file uploaded",
+        description: "You can now ask questions about the XML content.",
       });
+      setMessages(prev => [...prev, { content: "XML file uploaded successfully. You can now ask questions about its content.", sender: "ai" }]);
     };
     reader.readAsText(file);
   };
 
   const handleSendMessage = async () => {
     if (inputMessage.trim() === "" || isLoading) return;
-    if (!logFile) {
+    if (!xmlContent) {
       toast({
-        title: "No log file",
-        description: "Please upload a Windows log file first.",
+        title: "No XML file",
+        description: "Please upload an XML file first.",
         variant: "destructive",
       });
       return;
@@ -114,7 +122,7 @@ export default function ChatPage() {
         },
         body: JSON.stringify({
           message: inputMessage,
-          logs: logFile,
+          xmlContent: xmlContent,
         }),
       });
 
@@ -142,73 +150,47 @@ export default function ChatPage() {
         
         <ScrollArea className="flex-1" ref={scrollAreaRef}>
           <div className="max-w-3xl mx-auto p-4">
+            <h1 className={`${audiowide.className} text-4xl text-center text-white mb-8 mt-4`}>
+              HAWK-AI
+            </h1>
             {/* Security Features Cards */}
             {messages.length === 1 && (
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                {SECURITY_FEATURES.map((feature, index) => (
-                  <motion.div
-                    key={feature.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <Card className="p-4 bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-colors group cursor-pointer backdrop-blur-xl">
-                      <div className="flex items-start gap-4">
-                        <div className={cn(
-                          "w-8 h-8 rounded-lg flex items-center justify-center ring-1 transition-all",
-                          feature.color === "blue" && "bg-blue-600/20 ring-blue-600/30 group-hover:ring-blue-500/50",
-                          feature.color === "amber" && "bg-amber-600/20 ring-amber-600/30 group-hover:ring-amber-500/50",
-                          feature.color === "emerald" && "bg-emerald-600/20 ring-emerald-600/30 group-hover:ring-emerald-500/50",
-                          feature.color === "purple" && "bg-purple-600/20 ring-purple-600/30 group-hover:ring-purple-500/50"
-                        )}>
-                          <feature.icon className={cn(
-                            "h-4 w-4",
-                            feature.color === "blue" && "text-blue-500",
-                            feature.color === "amber" && "text-amber-500",
-                            feature.color === "emerald" && "text-emerald-500",
-                            feature.color === "purple" && "text-purple-500"
-                          )} />
+              <div className="flex justify-center">
+                <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl">
+                  {SECURITY_FEATURES.map((feature, index) => (
+                    <motion.div
+                      key={feature.title}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <Card className="p-4 bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-colors group cursor-pointer backdrop-blur-xl">
+                        <div className="flex items-start gap-4">
+                          <div className={cn(
+                            "w-8 h-8 rounded-lg flex items-center justify-center ring-1 transition-all",
+                            feature.color === "blue" && "bg-blue-600/20 ring-blue-600/30 group-hover:ring-blue-500/50",
+                            feature.color === "amber" && "bg-amber-600/20 ring-amber-600/30 group-hover:ring-amber-500/50",
+                            feature.color === "emerald" && "bg-emerald-600/20 ring-emerald-600/30 group-hover:ring-emerald-500/50",
+                            feature.color === "purple" && "bg-purple-600/20 ring-purple-600/30 group-hover:ring-purple-500/50"
+                          )}>
+                            <feature.icon className={cn(
+                              "h-4 w-4",
+                              feature.color === "blue" && "text-blue-500",
+                              feature.color === "amber" && "text-amber-500",
+                              feature.color === "emerald" && "text-emerald-500",
+                              feature.color === "purple" && "text-purple-500"
+                            )} />
+                          </div>
+                          <div>
+                            <h3 className="font-medium text-white mb-1">{feature.title}</h3>
+                            <p className="text-sm text-gray-400">{feature.description}</p>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="font-medium text-white mb-1">{feature.title}</h3>
-                          <p className="text-sm text-gray-400">{feature.description}</p>
-                        </div>
-                      </div>
-                    </Card>
-                  </motion.div>
-                ))}
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
-            )}
-
-            {/* Security Stats */}
-            {messages.length === 1 && (
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="mb-8"
-              >
-                <Card className="p-6 bg-gray-800/50 border-gray-700 backdrop-blur-xl">
-                  <div className="grid grid-cols-4 gap-4">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-500 mb-1">24h</div>
-                      <div className="text-xs text-gray-400">Monitoring Period</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-amber-500 mb-1">12</div>
-                      <div className="text-xs text-gray-400">Active Users</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-emerald-500 mb-1">45</div>
-                      <div className="text-xs text-gray-400">Login Events</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-purple-500 mb-1">2</div>
-                      <div className="text-xs text-gray-400">Security Alerts</div>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
             )}
 
             {/* Messages */}
@@ -272,8 +254,22 @@ export default function ChatPage() {
         <div className="border-t border-gray-800 bg-gray-900/50 backdrop-blur-xl p-4">
           <div className="max-w-3xl mx-auto">
             <div className="relative flex gap-2">
+              <Button
+                onClick={() => fileInputRef.current?.click()}
+                className="bg-gray-800/50 hover:bg-gray-700/50 text-white"
+              >
+                <Upload className="h-4 w-4 mr-2" />
+                Upload XML
+              </Button>
+              <input
+                type="file"
+                ref={fileInputRef}
+                onChange={handleFileUpload}
+                accept=".xml"
+                className="hidden"
+              />
               <Input
-                placeholder="Ask about Windows security logs..."
+                placeholder="Ask about the XML content..."
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && !e.shiftKey && handleSendMessage()}
@@ -294,7 +290,7 @@ export default function ChatPage() {
         </div>
       </div>
 
-      {/* Sidebar - Now on the right */}
+      {/* Sidebar - on the right */}
       <div className="w-80 border-l border-gray-800 bg-gray-900/50 backdrop-blur-xl">
         <div className="p-4 border-b border-gray-800">
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">
