@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/accordion"
 import { CheckIcon, XIcon, HelpCircleIcon } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { useRouter } from 'next/navigation'
 
 const plans = [
   {
@@ -85,8 +86,14 @@ const faqs = [
 ]
 
 export default function PricingPage() {
+  const router = useRouter()
   const [isAnnual, setIsAnnual] = useState(false)
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
+
+  const handlePlanSelection = (planName: string) => {
+    setSelectedPlan(planName)
+    router.push(`/billing?plan=${planName}`)
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -171,7 +178,7 @@ export default function PricingPage() {
                       className={`relative overflow-hidden border-gray-800 bg-gradient-to-b from-[#131313] to-black transition-all duration-300 ${
                         selectedPlan === plan.name ? 'ring-2 ring-white' : ''
                       }`}
-                      onClick={() => setSelectedPlan(plan.name)}
+                      onClick={() => handlePlanSelection(plan.name)}
                     >
                       {plan.popular && (
                         <div className="absolute right-0 top-0">
