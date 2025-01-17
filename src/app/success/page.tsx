@@ -7,12 +7,16 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
 import Link from 'next/link'
+import { Suspense } from 'react'
+import { Skeleton } from "@/components/ui/skeleton"
 
 export default function SuccessPage() {
-  const searchParams = useSearchParams()
-  const sessionId = searchParams.get('session_id')
+  // const searchParams = useSearchParams()
+  // const sessionId = searchParams.get('session_id')
 
   return (
+    <Suspense fallback={<SuccessLoadingSkeleton />}>
+
     <div className="relative min-h-screen overflow-hidden bg-[#000000]">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
@@ -52,6 +56,20 @@ export default function SuccessPage() {
         </section>
       </main>
     </div>
+    </Suspense>
+
   )
 }
 
+function SuccessLoadingSkeleton() {
+    return (
+      <Card className="max-w-md mx-auto border-gray-800 bg-gradient-to-b from-[#131313] to-black">
+        <CardContent className="p-6 text-center">
+          <Skeleton className="h-16 w-16 rounded-full mx-auto mb-4 bg-gray-700" />
+          <Skeleton className="h-8 w-48 mx-auto mb-4 bg-gray-700" />
+          <Skeleton className="h-4 w-64 mx-auto mb-6 bg-gray-700" />
+          <Skeleton className="h-10 w-32 mx-auto bg-gray-700" />
+        </CardContent>
+      </Card>
+    )
+  }
