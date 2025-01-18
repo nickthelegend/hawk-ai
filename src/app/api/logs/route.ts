@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { XMLParser } from 'fast-xml-parser';
 import { ParsedXml, Event, ProcessedEventData } from '@/types/logs';
+import fs from 'fs';
+import path from 'path';
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
@@ -17,10 +19,19 @@ export async function POST(request: NextRequest) {
   const xmlContent = await file.text();
 
   try {
-    const parser = new XMLParser();
+    const parser = new XMLParser({ ignoreAttributes: false, parseAttributeValue: true });
     const result = parser.parse(xmlContent) as ParsedXml;
     const events = extractEvents(result);
-    return NextResponse.json({ message: 'Logs processed successfully', logs: events });
+
+    // Save the processed logs to a JSON file
+    const logsDir = path.join(process.cwd(), 'logs');
+    if (!fs.existsSync(logsDir)) {
+      fs.mkdirSync(logsDir);
+    }
+    const filename = `security_logs_${new Date().toISOString().replace(/:/g, '-')}.json`;
+    fs.writeFileSync(path.join(logsDir, filename), JSON.stringify(events, null, 2));
+
+    return NextResponse.json({ message: 'Logs processed and saved successfully', logs: events });
   } catch (error) {
     console.error('Error processing XML file:', error);
     return NextResponse.json({ error: 'Error processing XML file' }, { status: 500 });
@@ -36,19 +47,15 @@ function extractEvents(parsedXml: ParsedXml): ProcessedEventData[] {
 
     for (const event of rawEvents) {
       const eventData: ProcessedEventData = {
-        EventID: event.System.EventID,
-        TimeCreated: event.System.TimeCreated['@_SystemTime'],
-        Computer: event.System.Computer,
-        EventRecordID: event.System.EventRecordID,
+        EventID: event.EventID,
+        TimeCreated: event.TimeGenerated,
+        Computer: 'N/A', // This information is not present in the provided XML
+        EventRecordID: 'N/A', // This information is not present in the provided XML
+        SourceName: event.SourceName,
+        EventType: event.EventType,
+        EventCategory: event.EventCategory,
+        Message: event.Message,
       };
-
-      if (event.EventData && event.EventData.Data) {
-        event.EventData.Data.forEach((data) => {
-          if (data['@_Name'] && data['#text']) {
-            eventData[data['@_Name']] = data['#text'];
-          }
-        });
-      }
 
       events.push(eventData);
     }
