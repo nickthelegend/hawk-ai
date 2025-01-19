@@ -1,18 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { XMLParser } from 'fast-xml-parser';
+import { XMLParser, XMLBuilder } from 'fast-xml-parser';
 import { ParsedXml, LogEventData } from '@/types/logs';
 import { supabase } from '@/lib/supabase';
+import { combineXmlFiles, storeLocalXml, deleteSupabaseXmlFiles, getLocalXmlContent } from '@/lib/xmlUtil';
+import fs from 'fs/promises';
+import path from 'path';
 
 export async function POST(request: NextRequest) {
   try {
     const data = await request.formData();
     const xmlFile: File | null = data.get('xml_file') as unknown as File;
     const accessKey = data.get('accessKey') as string;
-    // const hostname = data.get('hostname') as string;
 
     if (!xmlFile || !accessKey) {
       return NextResponse.json({ 
-        error: 'Missing required fields: xml_file, accessKey, or hostname' 
+        error: 'Missing required fields: xml_file or accessKey' 
       }, { status: 400 });
     }
 
@@ -21,12 +23,11 @@ export async function POST(request: NextRequest) {
       .from('computers')
       .select('*')
       .eq('access_key', accessKey)
-      // .eq('hostname', hostname)
       .single();
 
     if (computerError || !computer) {
       return NextResponse.json({ 
-        error: 'Invalid access key or hostname' 
+        error: 'Invalid access key' 
       }, { status: 401 });
     }
 
@@ -38,11 +39,14 @@ export async function POST(request: NextRequest) {
 
     const xmlContent = await xmlFile.text();
 
-    // Store XML in Supabase Storage
+    // 1. Store logs in local storage
+    await storeLocalXml(accessKey, xmlContent);
+
+    // 2. Store logs in Supabase storage
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const xmlFilePath = `logs/${accessKey}/${timestamp}.xml`;
     
-    const { data: uploadData, error: xmlUploadError } = await supabase.storage
+    const { error: xmlUploadError } = await supabase.storage
       .from('windows-logs')
       .upload(xmlFilePath, xmlContent, {
         contentType: 'application/xml',
@@ -57,13 +61,6 @@ export async function POST(request: NextRequest) {
         details: xmlUploadError
       }, { status: 500 });
     }
-
-    // Get the public URL of the uploaded file
-    const { data: { publicUrl } } = supabase.storage
-      .from('windows-logs')
-      .getPublicUrl(xmlFilePath);
-
-    console.log('File uploaded successfully. Public URL:', publicUrl);
 
     // Parse XML and store events in the database
     const parser = new XMLParser({ ignoreAttributes: false });
@@ -85,46 +82,37 @@ export async function POST(request: NextRequest) {
       }, { status: 500 });
     }
 
-    // Update or create the timestamps file
-    const timestampsFilePath = `logs/${accessKey}/timestamps.json`;
-    let timestamps: string[] = [];
-    
-    const { data: existingFile, error: fetchError } = await supabase.storage
+    // 3. Combine XML files and update Security.xml
+    const combinedXml = await combineXmlFiles(accessKey);
+    const securityXmlPath = `logs/${accessKey}/Security.xml`;
+
+    const { error: securityXmlUploadError } = await supabase.storage
       .from('windows-logs')
-      .download(timestampsFilePath);
-
-    if (!fetchError && existingFile) {
-      timestamps = JSON.parse(await existingFile.text());
-    }
-
-    timestamps.push(timestamp);
-
-    const { error: timestampUploadError } = await supabase.storage
-      .from('windows-logs')
-      .upload(timestampsFilePath, JSON.stringify(timestamps), {
-        contentType: 'application/json',
+      .upload(securityXmlPath, combinedXml, {
+        contentType: 'application/xml',
         upsert: true,
         cacheControl: '3600'
       });
 
-    if (timestampUploadError) {
-      console.error('Error uploading timestamps file:', timestampUploadError);
+    if (securityXmlUploadError) {
+      console.error('Error uploading Security.xml:', securityXmlUploadError);
       return NextResponse.json({ 
-        error: 'Error uploading timestamps file',
-        details: timestampUploadError
+        error: 'Error uploading Security.xml',
+        details: securityXmlUploadError
       }, { status: 500 });
     }
 
-    // Get the public URL of the timestamps file
-    const { data: { publicUrl: timestampsPublicUrl } } = supabase.storage
-      .from('windows-logs')
-      .getPublicUrl(timestampsFilePath);
+    // Delete old XML files from Supabase storage
+    await deleteSupabaseXmlFiles(accessKey);
 
-    console.log('Timestamps file uploaded successfully. Public URL:', timestampsPublicUrl);
+    // Update local Security.xml
+    const localSecurityXmlPath = path.join(process.cwd(), 'windows-logs', accessKey, 'Security.xml');
+    await fs.writeFile(localSecurityXmlPath, combinedXml);
 
     return NextResponse.json({ 
-      message: 'Logs processed and stored successfully',
-      xmlPath: xmlFilePath
+      message: 'Logs processed, stored, and combined successfully',
+      xmlPath: xmlFilePath,
+      securityXmlPath: securityXmlPath
     });
   } catch (error) {
     console.error('Error processing logs:', error);
@@ -151,3 +139,4 @@ function extractEvents(parsedXml: ParsedXml): LogEventData[] {
   }
   return events;
 }
+
