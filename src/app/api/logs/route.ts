@@ -1,65 +1,153 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { XMLParser } from 'fast-xml-parser';
-import { ParsedXml, Event, ProcessedEventData } from '@/types/logs';
-import fs from 'fs';
-import path from 'path';
+import { ParsedXml, LogEventData } from '@/types/logs';
+import { supabase } from '@/lib/supabase';
 
 export async function POST(request: NextRequest) {
-  const data = await request.formData();
-  const file: File | null = data.get('file') as unknown as File;
-
-  if (!file) {
-    return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
-  }
-
-  if (!file.name.toLowerCase().endsWith('.xml')) {
-    return NextResponse.json({ error: 'Please upload an XML file' }, { status: 400 });
-  }
-
-  const xmlContent = await file.text();
-
   try {
-    const parser = new XMLParser({ ignoreAttributes: false, parseAttributeValue: true });
+    const data = await request.formData();
+    const xmlFile: File | null = data.get('xml_file') as unknown as File;
+    const accessKey = data.get('accessKey') as string;
+    // const hostname = data.get('hostname') as string;
+
+    if (!xmlFile || !accessKey) {
+      return NextResponse.json({ 
+        error: 'Missing required fields: xml_file, accessKey, or hostname' 
+      }, { status: 400 });
+    }
+
+    // Verify access key
+    const { data: computer, error: computerError } = await supabase
+      .from('computers')
+      .select('*')
+      .eq('access_key', accessKey)
+      // .eq('hostname', hostname)
+      .single();
+
+    if (computerError || !computer) {
+      return NextResponse.json({ 
+        error: 'Invalid access key or hostname' 
+      }, { status: 401 });
+    }
+
+    // Update last_seen
+    await supabase
+      .from('computers')
+      .update({ last_seen: new Date().toISOString() })
+      .eq('id', computer.id);
+
+    const xmlContent = await xmlFile.text();
+
+    // Store XML in Supabase Storage
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const xmlFilePath = `logs/${accessKey}/${timestamp}.xml`;
+    
+    const { data: uploadData, error: xmlUploadError } = await supabase.storage
+      .from('windows-logs')
+      .upload(xmlFilePath, xmlContent, {
+        contentType: 'application/xml',
+        upsert: true,
+        cacheControl: '3600'
+      });
+
+    if (xmlUploadError) {
+      console.error('Error uploading XML to storage:', xmlUploadError);
+      return NextResponse.json({ 
+        error: 'Error uploading XML to storage',
+        details: xmlUploadError
+      }, { status: 500 });
+    }
+
+    // Get the public URL of the uploaded file
+    const { data: { publicUrl } } = supabase.storage
+      .from('windows-logs')
+      .getPublicUrl(xmlFilePath);
+
+    console.log('File uploaded successfully. Public URL:', publicUrl);
+
+    // Parse XML and store events in the database
+    const parser = new XMLParser({ ignoreAttributes: false });
     const result = parser.parse(xmlContent) as ParsedXml;
     const events = extractEvents(result);
 
-    // Save the processed logs to a JSON file
-    const logsDir = path.join(process.cwd(), 'logs');
-    if (!fs.existsSync(logsDir)) {
-      fs.mkdirSync(logsDir);
-    }
-    const filename = `security_logs_${new Date().toISOString().replace(/:/g, '-')}.json`;
-    fs.writeFileSync(path.join(logsDir, filename), JSON.stringify(events, null, 2));
+    const { error: insertError } = await supabase
+      .from('log_events')
+      .insert(events.map(event => ({
+        computer_id: computer.id,
+        ...event
+      })));
 
-    return NextResponse.json({ message: 'Logs processed and saved successfully', logs: events });
+    if (insertError) {
+      console.error('Error inserting events:', insertError);
+      return NextResponse.json({ 
+        error: 'Error inserting events',
+        details: insertError
+      }, { status: 500 });
+    }
+
+    // Update or create the timestamps file
+    const timestampsFilePath = `logs/${accessKey}/timestamps.json`;
+    let timestamps: string[] = [];
+    
+    const { data: existingFile, error: fetchError } = await supabase.storage
+      .from('windows-logs')
+      .download(timestampsFilePath);
+
+    if (!fetchError && existingFile) {
+      timestamps = JSON.parse(await existingFile.text());
+    }
+
+    timestamps.push(timestamp);
+
+    const { error: timestampUploadError } = await supabase.storage
+      .from('windows-logs')
+      .upload(timestampsFilePath, JSON.stringify(timestamps), {
+        contentType: 'application/json',
+        upsert: true,
+        cacheControl: '3600'
+      });
+
+    if (timestampUploadError) {
+      console.error('Error uploading timestamps file:', timestampUploadError);
+      return NextResponse.json({ 
+        error: 'Error uploading timestamps file',
+        details: timestampUploadError
+      }, { status: 500 });
+    }
+
+    // Get the public URL of the timestamps file
+    const { data: { publicUrl: timestampsPublicUrl } } = supabase.storage
+      .from('windows-logs')
+      .getPublicUrl(timestampsFilePath);
+
+    console.log('Timestamps file uploaded successfully. Public URL:', timestampsPublicUrl);
+
+    return NextResponse.json({ 
+      message: 'Logs processed and stored successfully',
+      xmlPath: xmlFilePath
+    });
   } catch (error) {
-    console.error('Error processing XML file:', error);
-    return NextResponse.json({ error: 'Error processing XML file' }, { status: 500 });
+    console.error('Error processing logs:', error);
+    return NextResponse.json({ 
+      error: 'Error processing logs' 
+    }, { status: 500 });
   }
 }
 
-function extractEvents(parsedXml: ParsedXml): ProcessedEventData[] {
-  const events: ProcessedEventData[] = [];
-  if (parsedXml.Events && parsedXml.Events.Event) {
-    const rawEvents = Array.isArray(parsedXml.Events.Event) 
-      ? parsedXml.Events.Event 
-      : [parsedXml.Events.Event];
-
-    for (const event of rawEvents) {
-      const eventData: ProcessedEventData = {
-        EventID: event.EventID,
-        TimeCreated: event.TimeGenerated,
-        Computer: 'N/A', // This information is not present in the provided XML
-        EventRecordID: 'N/A', // This information is not present in the provided XML
-        SourceName: event.SourceName,
-        EventType: event.EventType,
-        EventCategory: event.EventCategory,
-        Message: event.Message,
-      };
-
-      events.push(eventData);
+function extractEvents(parsedXml: ParsedXml): LogEventData[] {
+  const events: LogEventData[] = [];
+  if (Array.isArray(parsedXml.Events.Event)) {
+    for (const event of parsedXml.Events.Event) {
+      events.push({
+        event_id: event.EventID,
+        source_name: event.SourceName,
+        event_type: event.EventType,
+        event_category: event.EventCategory || null,
+        message: event.Message || null,
+        time_generated: event.TimeGenerated,
+        log_type: 'Security'
+      });
     }
   }
   return events;
 }
-
