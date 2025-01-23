@@ -80,3 +80,23 @@ export async function setSession(access_token: string, refresh_token: string) {
   return data
 }
 
+export async function getUserLicense(userId: string) {
+  const { data, error } = await supabase.from("licenses").select("id").eq("user_id", userId).single()
+
+  if (error) throw error
+  return data
+}
+
+export async function getComputersByLicenseId(licenseId: string) {
+  const { data, error } = await supabase.from("computers").select("*").eq("license_id", licenseId)
+
+  if (error) throw error
+  return data
+}
+
+
+export async function getUserFromSession() {
+  const { data: { user }, error } = await supabase.auth.getUser();
+  if (error) throw error;
+  return user;
+}
