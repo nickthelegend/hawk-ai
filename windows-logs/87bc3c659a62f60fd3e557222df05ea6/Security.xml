@@ -1,7 +1,415 @@
 <Events>
   <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 23:57:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
     <EventID>4672</EventID>
-    <TimeGenerated>2025-01-19 13:45:47</TimeGenerated>
+    <TimeGenerated>2025-01-22 23:47:07</TimeGenerated>
     <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
     <EventType>Audit Success</EventType>
     <EventCategory>12548</EventCategory>
@@ -28,7 +436,7 @@ Privileges:		SeAssignPrimaryTokenPrivilege
   </Event>
   <Event>
     <EventID>4624</EventID>
-    <TimeGenerated>2025-01-19 13:45:47</TimeGenerated>
+    <TimeGenerated>2025-01-22 23:47:07</TimeGenerated>
     <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
     <EventType>Audit Success</EventType>
     <EventCategory>12544</EventCategory>
@@ -60,7 +468,7 @@ New Logon:
 	Logon GUID:		{00000000-0000-0000-0000-000000000000}
 
 Process Information:
-	Process ID:		0x474
+	Process ID:		0x4b4
 	Process Name:		C:\Windows\System32\services.exe
 
 Network Information:
@@ -92,6 +500,2132 @@ The authentication information fields provide detailed information about this sp
 	- Transited services indicate which intermediate services have participated in this logon request.
 	- Package name indicates which sub-protocol was used among the NTLM protocols.
 	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:42:51</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x23faa35b
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:42:51</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x23fa8859
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:42:51</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x23fa88a6
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:42:51</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x23faa683
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:42:51</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testingtesla7@gmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x23faa35b
+
+Privileges:		SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:40:40</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 23:40:40</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:38:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 23:38:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:35:56</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:28:22</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 23:28:22</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:23:52</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x2368951a
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:23:52</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x2368b12a
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:23:52</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x2368959f
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4634</EventID>
+    <TimeGenerated>2025-01-22 23:23:52</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12545</EventCategory>
+    <Message>An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0x2368b441
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:23:52</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testingtesla7@gmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x2368b12a
+
+Privileges:		SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:14:59</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 23:14:59</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 23:14:58</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 23:14:58</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-501
+	Account Name:		Guest
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-503
+	Account Name:		DefaultAccount
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-500
+	Account Name:		Administrator
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-501
+	Account Name:		Guest
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-503
+	Account Name:		DefaultAccount
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>4798</EventID>
+    <TimeGenerated>2025-01-22 22:48:28</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>A user&apos;s local group membership was enumerated.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+User:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-500
+	Account Name:		Administrator
+	Account Domain:		JAIBAJRANG
+
+Process Information:
+	Process ID:		0x3594
+	Process Name:		C:\Windows\System32\svchost.exe</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:46:15</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 22:22:01</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 22:22:01</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 22:22:01</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 22:22:01</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>4672</EventID>
+    <TimeGenerated>2025-01-22 22:22:01</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12548</EventCategory>
+    <Message>Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege</Message>
+  </Event>
+  <Event>
+    <EventID>4624</EventID>
+    <TimeGenerated>2025-01-22 22:22:01</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12544</EventCategory>
+    <Message>An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		%%1843
+	Elevated Token:		%%1842
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x4b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:18</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:17</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:17</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 22:18:17</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa6c26
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:05:55</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8100
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5379</EventID>
+    <TimeGenerated>2025-01-22 01:02:53</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Credential Manager credentials were read.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+	Read Operation:		%%8099
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager.</Message>
+  </Event>
+  <Event>
+    <EventID>5382</EventID>
+    <TimeGenerated>2025-01-22 00:55:36</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Vault credentials were read.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+This event occurs when a user reads a stored vault credential.</Message>
+  </Event>
+  <Event>
+    <EventID>5382</EventID>
+    <TimeGenerated>2025-01-22 00:55:36</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>13824</EventCategory>
+    <Message>Vault credentials were read.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		JAIBAJRANG$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+This event occurs when a user reads a stored vault credential.</Message>
+  </Event>
+  <Event>
+    <EventID>5058</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key file operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Key File Operation Information:
+	File Path:	C:\Users\testi\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_69dc2dce-84db-499d-9abc-40d3db84f3a2
+	Operation:	%%2457
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5059</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key migration operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Additional Information:
+	Operation:	%%2464
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5061</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12290</EventCategory>
+    <Message>Cryptographic operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Cryptographic Operation:
+	Operation:	%%2480
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5058</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key file operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Key File Operation Information:
+	File Path:	C:\Users\testi\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_69dc2dce-84db-499d-9abc-40d3db84f3a2
+	Operation:	%%2458
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5059</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key migration operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Additional Information:
+	Operation:	%%2464
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5058</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key file operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Key File Operation Information:
+	File Path:	C:\Users\testi\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_69dc2dce-84db-499d-9abc-40d3db84f3a2
+	Operation:	%%2457
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5059</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key migration operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Additional Information:
+	Operation:	%%2464
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5061</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12290</EventCategory>
+    <Message>Cryptographic operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Cryptographic Operation:
+	Operation:	%%2480
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5058</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key file operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Key File Operation Information:
+	File Path:	C:\Users\testi\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_69dc2dce-84db-499d-9abc-40d3db84f3a2
+	Operation:	%%2458
+	Return Code:	0x0</Message>
+  </Event>
+  <Event>
+    <EventID>5059</EventID>
+    <TimeGenerated>2025-01-22 00:55:33</TimeGenerated>
+    <SourceName>Microsoft-Windows-Security-Auditing</SourceName>
+    <EventType>Audit Success</EventType>
+    <EventCategory>12292</EventCategory>
+    <Message>Key migration operation.
+
+Subject:
+	Security ID:		S-1-5-21-4176545725-3240412065-1138046539-1002
+	Account Name:		testi
+	Account Domain:		JAIBAJRANG
+	Logon ID:		0xa4a06
+
+Process Information:
+	Process ID:		11412
+	Process Creation Time:	2025-01-21T20:55:27.5383317Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	%%2500
+
+Additional Information:
+	Operation:	%%2464
+	Return Code:	0x0</Message>
   </Event>
   <Event>
     <EventID>4672</EventID>
