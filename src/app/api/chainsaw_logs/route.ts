@@ -6,11 +6,13 @@ export async function POST(request: NextRequest) {
     const data = await request.formData()
     const jsonFile: File | null = data.get("json_file") as unknown as File
     const accessKey = data.get("accessKey") as string
+    const ipAddress = data.get("ipAddress") as string
+    const desktopName = data.get("desktopName") as string
 
-    if (!jsonFile || !accessKey) {
+    if (!jsonFile || !accessKey || !ipAddress || !desktopName) {
       return NextResponse.json(
         {
-          error: "Missing required fields: json_file or accessKey",
+          error: "Missing required fields: json_file, accessKey, ipAddress, or desktopName",
         },
         { status: 400 },
       )
@@ -32,11 +34,24 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Update last_seen
-    await supabase.from("computers").update({ last_seen: new Date().toISOString() }).eq("id", computer.id)
+    // Update last_seen, IP address, and desktop name
+    await supabase
+      .from("computers")
+      .update({
+        last_seen: new Date().toISOString(),
+        ip_address: ipAddress,
+        desktop_name: desktopName,
+      })
+      .eq("id", computer.id)
 
     const jsonContent = await jsonFile.text()
     const chainsawLogs = JSON.parse(jsonContent)
+
+    if (chainsawLogs.length === 0) {
+      return NextResponse.json({
+        message: "No chainsaw logs to process",
+      })
+    }
 
     // Store JSON file in Supabase storage
     const timestamp = new Date().toISOString().replace(/[:.]/g, "-")
@@ -81,6 +96,8 @@ export async function POST(request: NextRequest) {
         log_id: log.id,
         logsource: log.logsource,
         reference_links: log.references,
+        ip_address: ipAddress,
+        desktop_name: desktopName,
       })),
     )
 
