@@ -6,11 +6,13 @@ export async function POST(request: NextRequest) {
     const data = await request.formData()
     const jsonFile: File | null = data.get("json_file") as unknown as File
     const accessKey = data.get("accessKey") as string
+    const ipAddress = data.get("ipAddress") as string
+    const desktopName = data.get("desktopName") as string
 
-    if (!jsonFile || !accessKey) {
+    if (!jsonFile || !accessKey || !ipAddress || !desktopName) {
       return NextResponse.json(
         {
-          error: "Missing required fields: json_file or accessKey",
+          error: "Missing required fields: json_file, accessKey, ipAddress, or desktopName",
         },
         { status: 400 },
       )
@@ -32,8 +34,15 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Update last_seen
-    await supabase.from("computers").update({ last_seen: new Date().toISOString() }).eq("id", computer.id)
+    // Update last_seen and IP address
+    await supabase
+      .from("computers")
+      .update({
+        last_seen: new Date().toISOString(),
+        ip_address: ipAddress,
+        desktop_name: desktopName,
+      })
+      .eq("id", computer.id)
 
     const jsonContent = await jsonFile.text()
     const threats = JSON.parse(jsonContent)
@@ -72,6 +81,8 @@ export async function POST(request: NextRequest) {
         authors: threat.authors,
         tags: threat.tags,
         event_data: threat.document.data,
+        ip_address: ipAddress,
+        desktop_name: desktopName,
       })),
     )
 
