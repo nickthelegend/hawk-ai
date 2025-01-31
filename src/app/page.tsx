@@ -17,10 +17,11 @@ export default function LandingPage() {
                     Simple & Powerful
                   </div>
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Finance & Budgeting Made Simple
+                  Hawk-AI: Intelligent Cybersecurity, Simplified
+
                   </h1>
                   <p className="max-w-[600px] text-zinc-200 md:text-xl">
-                    Powerful analytics and financial management tools to help you make better business decisions.
+                  Advanced AI-driven monitoring to detect threats, secure logins, and protect your business in real time.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
