@@ -3,20 +3,8 @@
 import { useEffect, useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import {
-  BarChart,
-  Bar,
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-  Tooltip,
-  PieChart,
-  Pie,
-  Cell,
-} from "recharts"
-import { Shield, ShieldAlert, Clock, Users, Laptop, Calendar, Download, Filter, RefreshCcw } from "lucide-react"
+import { ResponsiveContainer, Tooltip, PieChart, Pie, Cell } from "recharts"
+import { Shield, ShieldAlert, Clock, Users, Laptop, Filter, RefreshCcw } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { supabase, getUserLicense, getComputersByLicenseId, getSession, getUserFromSession } from "@/lib/auth"
@@ -311,10 +299,10 @@ export default function AnalyticsPage() {
           id: event.id,
           timestamp: event.timestamp,
           type: event.name,
-          user: event.event_data?.TargetUserName || "Unknown",
-          location: event.event_data?.IpAddress || "Unknown",
+          user: event.desktop_name || "Unknown",
+          location: event.ip_address || "Unknown",
           severity: event.level as "high" | "medium" | "low",
-          details: event.event_data?.Description || "No additional details available",
+          details: event.event_data?.EventData || "No additional details available",
           affectedSystems: event.event_data?.AffectedSystems || [],
         })),
       )
